@@ -1,0 +1,13 @@
+## content of /src/main/resources/application.yml
+spring:
+  datasource:
+    url: &dbURL jdbc:postgresql://127.0.0.1:5432/coursedb
+    username: &dbUser postgres
+    password: &dbPassword mysecretpassword
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        # Hibernate ddl auto (create, create-drop, validate, update) 
+    hibernate:
+      ddl-auto: create
